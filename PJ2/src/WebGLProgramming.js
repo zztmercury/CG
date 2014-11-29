@@ -14,6 +14,8 @@ var FSHADER_SOURCE =
 
 function main() {
     var canvas = document.getElementById("webgl");
+    canvas.width = canvasSize.maxX;
+    canvas.height = canvasSize.maxY;
     var gl = getWebGLContext(canvas);
     if (!gl) {
         console.log('Failed to get the rendering context for WebGL');
